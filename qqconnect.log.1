@@ -1,0 +1,1555 @@
+124206 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20001} Parameters : [1]
+124206 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20001} Types : [INTEGER]
+124207 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20001} executed. 1.1337 millis. select sum(type = 1) doc,sum(type = 2) image,sum(type = 3) video,
+      sum(type = 4) music,sum(type = 5) other,count(*) fileCount from my_file
+      where file_store_id = ?
+124207 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20001, rs-50012} open
+124207 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20001, rs-50012} Header: [doc, image, video, music, other, fileCount]
+124207 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20001, rs-50012} Result: [6, 0, 0, 0, 0, 6]
+124209 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20001, rs-50012} closed
+124209 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20001} clearParameters. 
+124209 DEBUG [2023-06-04 18:06:05]  {conn-10005} pool-recycle
+124210 DEBUG [2023-06-04 18:06:05]  {conn-10005} pool-connect
+124210 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20006} Parameters : [1]
+124210 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20006} Types : [INTEGER]
+124211 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20006} executed. 0.846 millis. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE user_id = ?
+124211 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20006, rs-50013} open
+124211 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20006, rs-50013} Header: [file_store_id, user_id, current_size, max_size, permission]
+124211 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20006, rs-50013} Result: [1, 1, 1474, 1048576, 0]
+124211 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20006, rs-50013} closed
+124211 DEBUG [2023-06-04 18:06:05]  {conn-10005, pstmt-20006} clearParameters. 
+124212 DEBUG [2023-06-04 18:06:05]  {conn-10005} pool-recycle
+125949 DEBUG [2023-06-04 18:06:06]  {conn-10005} pool-connect
+125951 DEBUG [2023-06-04 18:06:06]  {conn-10005, pstmt-20009} Parameters : [1]
+125951 DEBUG [2023-06-04 18:06:06]  {conn-10005, pstmt-20009} Types : [INTEGER]
+125952 DEBUG [2023-06-04 18:06:06]  {conn-10005, pstmt-20009} executed. 1.2615 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where parent_folder_id = ?;
+125952 DEBUG [2023-06-04 18:06:06]  {conn-10005, pstmt-20009, rs-50014} open
+125952 DEBUG [2023-06-04 18:06:06]  {conn-10005, pstmt-20009, rs-50014} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
+125952 DEBUG [2023-06-04 18:06:06]  {conn-10005, pstmt-20009, rs-50014} Result: [4, 2022年2015433, 1, 1/2023-06-04/1, 1, 2023-06-04 00:23:35.0, 1, 10, 1, .xlsx]
+125953 DEBUG [2023-06-04 18:06:06]  {conn-10005, pstmt-20009, rs-50014} Result: [6, 2022年2015433班级推优大会请假汇总, 1, 1/2023-06-04/1, 0, 2023-06-04 18:05:51.0, 1, 10, 1, .xlsx]
+125954 DEBUG [2023-06-04 18:06:06]  {conn-10005, pstmt-20009, rs-50014} closed
+125954 DEBUG [2023-06-04 18:06:06]  {conn-10005, pstmt-20009} clearParameters. 
+125954 DEBUG [2023-06-04 18:06:06]  {conn-10005} pool-recycle
+144368 DEBUG [2023-06-04 18:06:25]  {conn-10001} closed
+144368 DEBUG [2023-06-04 18:06:25]  {conn-10002} closed
+144368 DEBUG [2023-06-04 18:06:25]  {conn-10003} closed
+144369 DEBUG [2023-06-04 18:06:25]  {conn-10004} closed
+144369 DEBUG [2023-06-04 18:06:25]  {conn-10005, pstmt-20000} closed
+144369 DEBUG [2023-06-04 18:06:25]  {conn-10005, pstmt-20002} closed
+144369 DEBUG [2023-06-04 18:06:25]  {conn-10005, pstmt-20003} closed
+144369 DEBUG [2023-06-04 18:06:25]  {conn-10005, pstmt-20004} closed
+144369 DEBUG [2023-06-04 18:06:25]  {conn-10005, pstmt-20007} closed
+144369 DEBUG [2023-06-04 18:06:25]  {conn-10005, pstmt-20008} closed
+144369 DEBUG [2023-06-04 18:06:25]  {conn-10005, pstmt-20010} closed
+144369 DEBUG [2023-06-04 18:06:25]  {conn-10005, pstmt-20011} closed
+144369 DEBUG [2023-06-04 18:06:25]  {conn-10005, pstmt-20005} closed
+144369 DEBUG [2023-06-04 18:06:25]  {conn-10005, pstmt-20001} closed
+144369 DEBUG [2023-06-04 18:06:25]  {conn-10005, pstmt-20006} closed
+144369 DEBUG [2023-06-04 18:06:25]  {conn-10005, pstmt-20009} closed
+144370 DEBUG [2023-06-04 18:06:25]  {conn-10005} closed
+0    DEBUG [2023-06-04 18:07:06]  {conn-10001,procId-137} connected
+18   DEBUG [2023-06-04 18:07:06]  {conn-10002,procId-138} connected
+34   DEBUG [2023-06-04 18:07:06]  {conn-10003,procId-139} connected
+52   DEBUG [2023-06-04 18:07:06]  {conn-10004,procId-140} connected
+68   DEBUG [2023-06-04 18:07:06]  {conn-10005,procId-141} connected
+76   DEBUG [2023-06-04 18:07:06]  {conn-10005} pool-connect
+177  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20000} created. select
+          user_id, open_id, file_store_id, user_name,email,password,register_time, image_path,role 
+        from user
+         WHERE email = ?
+189  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20000} Parameters : [774860129@qq.com]
+190  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20000} Types : [VARCHAR]
+198  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20000} executed. 9.4473 millis. select
+          user_id, open_id, file_store_id, user_name,email,password,register_time, image_path,role 
+        from user
+         WHERE email = ?
+201  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20000, rs-50000} open
+202  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20000, rs-50000} Header: [user_id, open_id, file_store_id, user_name, email, password, register_time, image_path, role]
+214  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20000, rs-50000} Result: [1, null, 1, user, 774860129@qq.com, root, 2023-06-03 21:26:14.0, https://p.qpic.cn/qqconnect/0/app_101851241_1582451550/100?max-age=2592000&t=0, 1]
+217  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20000, rs-50000} closed
+219  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20000} clearParameters. 
+221  DEBUG [2023-06-04 18:07:06]  {conn-10005} pool-recycle
+251  DEBUG [2023-06-04 18:07:06]  {conn-10005} pool-connect
+254  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20001} created. select sum(type = 1) doc,sum(type = 2) image,sum(type = 3) video,
+      sum(type = 4) music,sum(type = 5) other,count(*) fileCount from my_file
+      where file_store_id = ?
+256  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20001} Parameters : [1]
+256  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20001} Types : [INTEGER]
+259  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20001} executed. 2.0429 millis. select sum(type = 1) doc,sum(type = 2) image,sum(type = 3) video,
+      sum(type = 4) music,sum(type = 5) other,count(*) fileCount from my_file
+      where file_store_id = ?
+259  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20001, rs-50001} open
+259  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20001, rs-50001} Header: [doc, image, video, music, other, fileCount]
+259  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20001, rs-50001} Result: [6, 0, 0, 0, 0, 6]
+261  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20001, rs-50001} closed
+261  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20001} clearParameters. 
+264  DEBUG [2023-06-04 18:07:06]  {conn-10005} pool-recycle
+264  DEBUG [2023-06-04 18:07:06]  {conn-10005} pool-connect
+265  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20002} created. select count(*) from file_folder where file_store_id = ?
+265  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20002} Parameters : [1]
+265  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20002} Types : [INTEGER]
+266  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20002} executed. 1.0041 millis. select count(*) from file_folder where file_store_id = ?
+266  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20002, rs-50002} open
+266  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20002, rs-50002} Header: [count(*)]
+267  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20002, rs-50002} Result: [1]
+267  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20002, rs-50002} closed
+267  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20002} clearParameters. 
+268  DEBUG [2023-06-04 18:07:06]  {conn-10005} pool-recycle
+268  DEBUG [2023-06-04 18:07:06]  {conn-10005} pool-connect
+269  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20003} created. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE file_store_id = ?
+269  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20003} Parameters : [1]
+269  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20003} Types : [INTEGER]
+270  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20003} executed. 0.8078 millis. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE file_store_id = ?
+270  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20003, rs-50003} open
+270  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20003, rs-50003} Header: [file_store_id, user_id, current_size, max_size, permission]
+271  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20003, rs-50003} Result: [1, 1, 1474, 1048576, 0]
+272  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20003, rs-50003} closed
+272  DEBUG [2023-06-04 18:07:06]  {conn-10005, pstmt-20003} clearParameters. 
+273  DEBUG [2023-06-04 18:07:06]  {conn-10005} pool-recycle
+3703 DEBUG [2023-06-04 18:07:09]  {conn-10005} pool-connect
+3703 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20004} created. select
+     
+    
+    file_folder_id, file_folder_name, parent_folder_id, file_store_id,time
+   
+    from file_folder
+    where file_store_id = ? and parent_folder_id = 0;
+3704 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20004} Parameters : [1]
+3704 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20004} Types : [INTEGER]
+3705 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20004} executed. 1.1572 millis. select
+     
+    
+    file_folder_id, file_folder_name, parent_folder_id, file_store_id,time
+   
+    from file_folder
+    where file_store_id = ? and parent_folder_id = 0;
+3705 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20004, rs-50004} open
+3705 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20004, rs-50004} Header: [file_folder_id, file_folder_name, parent_folder_id, file_store_id, time]
+3705 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20004, rs-50004} Result: [1, 你不知道我为什么离开你, 0, 1, 2023-06-04 00:23:07.0]
+3708 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20004, rs-50004} closed
+3708 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20004} clearParameters. 
+3708 DEBUG [2023-06-04 18:07:09]  {conn-10005} pool-recycle
+3708 DEBUG [2023-06-04 18:07:09]  {conn-10005} pool-connect
+3709 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20005} created. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where file_store_id = ? and parent_folder_id = 0;
+3710 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20005} Parameters : [1]
+3710 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20005} Types : [INTEGER]
+3710 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20005} executed. 1.0102 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where file_store_id = ? and parent_folder_id = 0;
+3711 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20005, rs-50005} open
+3711 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20005, rs-50005} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
+3711 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20005, rs-50005} Result: [1, 2015433附件3, 1, 1/2023-06-04/0, 0, 2023-06-04 00:20:12.0, 0, 27, 1, .doc]
+3714 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20005, rs-50005} Result: [2, test02, 1, 1/2023-06-04/0, 0, 2023-06-04 00:22:22.0, 0, 9, 1, .xlsx]
+3715 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20005, rs-50005} Result: [3, 1_星期二下午20计科3班, 1, 1/2023-06-04/0, 0, 2023-06-04 00:22:38.0, 0, 1056, 1, .xlsx]
+3716 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20005, rs-50005} Result: [5, 推优大会, 1, 1/2023-06-04/0, 0, 2023-06-04 17:41:21.0, 0, 362, 1, .pptx]
+3717 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20005, rs-50005} closed
+3717 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20005} clearParameters. 
+3718 DEBUG [2023-06-04 18:07:09]  {conn-10005} pool-recycle
+3720 DEBUG [2023-06-04 18:07:09]  {conn-10005} pool-connect
+3721 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20006} created. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE user_id = ?
+3722 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20006} Parameters : [1]
+3722 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20006} Types : [INTEGER]
+3722 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20006} executed. 1.3257 millis. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE user_id = ?
+3724 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20006, rs-50006} open
+3724 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20006, rs-50006} Header: [file_store_id, user_id, current_size, max_size, permission]
+3724 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20006, rs-50006} Result: [1, 1, 1474, 1048576, 0]
+3724 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20006, rs-50006} closed
+3724 DEBUG [2023-06-04 18:07:09]  {conn-10005, pstmt-20006} clearParameters. 
+3725 DEBUG [2023-06-04 18:07:09]  {conn-10005} pool-recycle
+5712 DEBUG [2023-06-04 18:07:11]  {conn-10005} pool-connect
+5712 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20007} created. select
+     
+    
+    file_folder_id, file_folder_name, parent_folder_id, file_store_id,time
+   
+    from file_folder
+    where file_folder_id = ?
+5714 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20007} Parameters : [1]
+5714 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20007} Types : [INTEGER]
+5715 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20007} executed. 0.8379 millis. select
+     
+    
+    file_folder_id, file_folder_name, parent_folder_id, file_store_id,time
+   
+    from file_folder
+    where file_folder_id = ?
+5715 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20007, rs-50007} open
+5715 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20007, rs-50007} Header: [file_folder_id, file_folder_name, parent_folder_id, file_store_id, time]
+5715 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20007, rs-50007} Result: [1, 你不知道我为什么离开你, 0, 1, 2023-06-04 00:23:07.0]
+5716 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20007, rs-50007} closed
+5716 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20007} clearParameters. 
+5716 DEBUG [2023-06-04 18:07:11]  {conn-10005} pool-recycle
+5717 DEBUG [2023-06-04 18:07:11]  {conn-10005} pool-connect
+5718 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20008} created. select
+     
+    
+    file_folder_id, file_folder_name, parent_folder_id, file_store_id,time
+   
+    from file_folder
+    where parent_folder_id = ?
+5718 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20008} Parameters : [1]
+5718 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20008} Types : [INTEGER]
+5719 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20008} executed. 0.9255 millis. select
+     
+    
+    file_folder_id, file_folder_name, parent_folder_id, file_store_id,time
+   
+    from file_folder
+    where parent_folder_id = ?
+5719 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20008, rs-50008} open
+5719 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20008, rs-50008} Header: [file_folder_id, file_folder_name, parent_folder_id, file_store_id, time]
+5719 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20008, rs-50008} closed
+5719 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20008} clearParameters. 
+5720 DEBUG [2023-06-04 18:07:11]  {conn-10005} pool-recycle
+5720 DEBUG [2023-06-04 18:07:11]  {conn-10005} pool-connect
+5721 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20009} created. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where parent_folder_id = ?;
+5721 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20009} Parameters : [1]
+5721 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20009} Types : [INTEGER]
+5722 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20009} executed. 1.1172 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where parent_folder_id = ?;
+5722 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20009, rs-50009} open
+5722 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20009, rs-50009} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
+5723 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20009, rs-50009} Result: [4, 2022年2015433, 1, 1/2023-06-04/1, 1, 2023-06-04 00:23:35.0, 1, 10, 1, .xlsx]
+5723 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20009, rs-50009} Result: [6, 2022年2015433班级推优大会请假汇总, 1, 1/2023-06-04/1, 0, 2023-06-04 18:05:51.0, 1, 10, 1, .xlsx]
+5724 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20009, rs-50009} closed
+5724 DEBUG [2023-06-04 18:07:11]  {conn-10005, pstmt-20009} clearParameters. 
+5724 DEBUG [2023-06-04 18:07:11]  {conn-10005} pool-recycle
+24882 DEBUG [2023-06-04 18:07:30]  {conn-10005} pool-connect
+24883 DEBUG [2023-06-04 18:07:30]  {conn-10005, pstmt-20010} created. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where file_store_id = ? and type = ?;
+24883 DEBUG [2023-06-04 18:07:30]  {conn-10005, pstmt-20010} Parameters : [1, 1]
+24883 DEBUG [2023-06-04 18:07:30]  {conn-10005, pstmt-20010} Types : [INTEGER, INTEGER]
+24884 DEBUG [2023-06-04 18:07:30]  {conn-10005, pstmt-20010} executed. 1.0888 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where file_store_id = ? and type = ?;
+24885 DEBUG [2023-06-04 18:07:30]  {conn-10005, pstmt-20010, rs-50010} open
+24885 DEBUG [2023-06-04 18:07:30]  {conn-10005, pstmt-20010, rs-50010} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
+24885 DEBUG [2023-06-04 18:07:30]  {conn-10005, pstmt-20010, rs-50010} Result: [1, 2015433附件3, 1, 1/2023-06-04/0, 0, 2023-06-04 00:20:12.0, 0, 27, 1, .doc]
+24886 DEBUG [2023-06-04 18:07:30]  {conn-10005, pstmt-20010, rs-50010} Result: [2, test02, 1, 1/2023-06-04/0, 0, 2023-06-04 00:22:22.0, 0, 9, 1, .xlsx]
+24887 DEBUG [2023-06-04 18:07:30]  {conn-10005, pstmt-20010, rs-50010} Result: [3, 1_星期二下午20计科3班, 1, 1/2023-06-04/0, 0, 2023-06-04 00:22:38.0, 0, 1056, 1, .xlsx]
+24887 DEBUG [2023-06-04 18:07:30]  {conn-10005, pstmt-20010, rs-50010} Result: [4, 2022年2015433, 1, 1/2023-06-04/1, 1, 2023-06-04 00:23:35.0, 1, 10, 1, .xlsx]
+24888 DEBUG [2023-06-04 18:07:30]  {conn-10005, pstmt-20010, rs-50010} Result: [5, 推优大会, 1, 1/2023-06-04/0, 0, 2023-06-04 17:41:21.0, 0, 362, 1, .pptx]
+24888 DEBUG [2023-06-04 18:07:30]  {conn-10005, pstmt-20010, rs-50010} Result: [6, 2022年2015433班级推优大会请假汇总, 1, 1/2023-06-04/1, 0, 2023-06-04 18:05:51.0, 1, 10, 1, .xlsx]
+24889 DEBUG [2023-06-04 18:07:30]  {conn-10005, pstmt-20010, rs-50010} closed
+24889 DEBUG [2023-06-04 18:07:30]  {conn-10005, pstmt-20010} clearParameters. 
+24890 DEBUG [2023-06-04 18:07:30]  {conn-10005} pool-recycle
+67366 DEBUG [2023-06-04 18:08:13]  {conn-10001} closed
+67367 DEBUG [2023-06-04 18:08:13]  {conn-10002} closed
+67367 DEBUG [2023-06-04 18:08:13]  {conn-10003} closed
+67368 DEBUG [2023-06-04 18:08:13]  {conn-10004} closed
+67368 DEBUG [2023-06-04 18:08:13]  {conn-10005, pstmt-20000} closed
+67368 DEBUG [2023-06-04 18:08:13]  {conn-10005, pstmt-20001} closed
+67368 DEBUG [2023-06-04 18:08:13]  {conn-10005, pstmt-20002} closed
+67368 DEBUG [2023-06-04 18:08:13]  {conn-10005, pstmt-20003} closed
+67368 DEBUG [2023-06-04 18:08:13]  {conn-10005, pstmt-20004} closed
+67371 DEBUG [2023-06-04 18:08:13]  {conn-10005, pstmt-20005} closed
+67371 DEBUG [2023-06-04 18:08:13]  {conn-10005, pstmt-20006} closed
+67371 DEBUG [2023-06-04 18:08:13]  {conn-10005, pstmt-20007} closed
+67371 DEBUG [2023-06-04 18:08:13]  {conn-10005, pstmt-20008} closed
+67371 DEBUG [2023-06-04 18:08:13]  {conn-10005, pstmt-20009} closed
+67371 DEBUG [2023-06-04 18:08:13]  {conn-10005, pstmt-20010} closed
+67371 DEBUG [2023-06-04 18:08:13]  {conn-10005} closed
+0    DEBUG [2023-06-04 18:12:09]  {conn-10001,procId-142} connected
+17   DEBUG [2023-06-04 18:12:09]  {conn-10002,procId-143} connected
+34   DEBUG [2023-06-04 18:12:09]  {conn-10003,procId-144} connected
+48   DEBUG [2023-06-04 18:12:09]  {conn-10004,procId-145} connected
+68   DEBUG [2023-06-04 18:12:09]  {conn-10005,procId-146} connected
+75   DEBUG [2023-06-04 18:12:09]  {conn-10005} pool-connect
+172  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20000} created. select
+          user_id, open_id, file_store_id, user_name,email,password,register_time, image_path,role 
+        from user
+         WHERE email = ?
+185  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20000} Parameters : [774860129@qq.com]
+185  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20000} Types : [VARCHAR]
+195  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20000} executed. 9.4779 millis. select
+          user_id, open_id, file_store_id, user_name,email,password,register_time, image_path,role 
+        from user
+         WHERE email = ?
+197  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20000, rs-50000} open
+199  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20000, rs-50000} Header: [user_id, open_id, file_store_id, user_name, email, password, register_time, image_path, role]
+209  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20000, rs-50000} Result: [1, null, 1, user, 774860129@qq.com, root, 2023-06-03 21:26:14.0, https://p.qpic.cn/qqconnect/0/app_101851241_1582451550/100?max-age=2592000&t=0, 1]
+214  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20000, rs-50000} closed
+215  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20000} clearParameters. 
+216  DEBUG [2023-06-04 18:12:09]  {conn-10005} pool-recycle
+249  DEBUG [2023-06-04 18:12:09]  {conn-10005} pool-connect
+251  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20001} created. select sum(type = 1) doc,sum(type = 2) image,sum(type = 3) video,
+      sum(type = 4) music,sum(type = 5) other,count(*) fileCount from my_file
+      where file_store_id = ?
+253  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20001} Parameters : [1]
+253  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20001} Types : [INTEGER]
+254  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20001} executed. 1.3111 millis. select sum(type = 1) doc,sum(type = 2) image,sum(type = 3) video,
+      sum(type = 4) music,sum(type = 5) other,count(*) fileCount from my_file
+      where file_store_id = ?
+254  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20001, rs-50001} open
+254  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20001, rs-50001} Header: [doc, image, video, music, other, fileCount]
+255  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20001, rs-50001} Result: [6, 0, 0, 0, 0, 6]
+256  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20001, rs-50001} closed
+257  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20001} clearParameters. 
+261  DEBUG [2023-06-04 18:12:09]  {conn-10005} pool-recycle
+262  DEBUG [2023-06-04 18:12:09]  {conn-10005} pool-connect
+263  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20002} created. select count(*) from file_folder where file_store_id = ?
+264  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20002} Parameters : [1]
+264  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20002} Types : [INTEGER]
+265  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20002} executed. 1.3643 millis. select count(*) from file_folder where file_store_id = ?
+265  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20002, rs-50002} open
+265  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20002, rs-50002} Header: [count(*)]
+265  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20002, rs-50002} Result: [1]
+266  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20002, rs-50002} closed
+266  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20002} clearParameters. 
+266  DEBUG [2023-06-04 18:12:09]  {conn-10005} pool-recycle
+267  DEBUG [2023-06-04 18:12:09]  {conn-10005} pool-connect
+267  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20003} created. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE file_store_id = ?
+268  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20003} Parameters : [1]
+268  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20003} Types : [INTEGER]
+269  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20003} executed. 1.143 millis. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE file_store_id = ?
+269  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20003, rs-50003} open
+269  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20003, rs-50003} Header: [file_store_id, user_id, current_size, max_size, permission]
+269  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20003, rs-50003} Result: [1, 1, 1474, 1048576, 0]
+271  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20003, rs-50003} closed
+271  DEBUG [2023-06-04 18:12:09]  {conn-10005, pstmt-20003} clearParameters. 
+272  DEBUG [2023-06-04 18:12:09]  {conn-10005} pool-recycle
+2811 DEBUG [2023-06-04 18:12:11]  {conn-10005} pool-connect
+2812 DEBUG [2023-06-04 18:12:11]  {conn-10005, pstmt-20004} created. select
+     
+    
+    file_folder_id, file_folder_name, parent_folder_id, file_store_id,time
+   
+    from file_folder
+    where file_store_id = ? and parent_folder_id = 0;
+2812 DEBUG [2023-06-04 18:12:11]  {conn-10005, pstmt-20004} Parameters : [1]
+2813 DEBUG [2023-06-04 18:12:11]  {conn-10005, pstmt-20004} Types : [INTEGER]
+2813 DEBUG [2023-06-04 18:12:11]  {conn-10005, pstmt-20004} executed. 0.8747 millis. select
+     
+    
+    file_folder_id, file_folder_name, parent_folder_id, file_store_id,time
+   
+    from file_folder
+    where file_store_id = ? and parent_folder_id = 0;
+2813 DEBUG [2023-06-04 18:12:11]  {conn-10005, pstmt-20004, rs-50004} open
+2814 DEBUG [2023-06-04 18:12:11]  {conn-10005, pstmt-20004, rs-50004} Header: [file_folder_id, file_folder_name, parent_folder_id, file_store_id, time]
+2814 DEBUG [2023-06-04 18:12:11]  {conn-10005, pstmt-20004, rs-50004} Result: [1, 你不知道我为什么离开你, 0, 1, 2023-06-04 00:23:07.0]
+2815 DEBUG [2023-06-04 18:12:11]  {conn-10005, pstmt-20004, rs-50004} closed
+2816 DEBUG [2023-06-04 18:12:11]  {conn-10005, pstmt-20004} clearParameters. 
+2816 DEBUG [2023-06-04 18:12:11]  {conn-10005} pool-recycle
+4170 DEBUG [2023-06-04 18:12:13]  {conn-10005} pool-connect
+4171 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20005} created. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where file_store_id = ? and parent_folder_id = 0;
+4172 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20005} Parameters : [1]
+4172 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20005} Types : [INTEGER]
+4173 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20005} executed. 1.01 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where file_store_id = ? and parent_folder_id = 0;
+4173 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20005, rs-50005} open
+4173 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20005, rs-50005} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
+4173 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20005, rs-50005} Result: [1, 2015433附件3, 1, 1/2023-06-04/0, 0, 2023-06-04 00:20:12.0, 0, 27, 1, .doc]
+4176 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20005, rs-50005} Result: [2, test02, 1, 1/2023-06-04/0, 0, 2023-06-04 00:22:22.0, 0, 9, 1, .xlsx]
+4177 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20005, rs-50005} Result: [3, 1_星期二下午20计科3班, 1, 1/2023-06-04/0, 0, 2023-06-04 00:22:38.0, 0, 1056, 1, .xlsx]
+4178 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20005, rs-50005} Result: [5, 推优大会, 1, 1/2023-06-04/0, 0, 2023-06-04 17:41:21.0, 0, 362, 1, .pptx]
+4179 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20005, rs-50005} closed
+4179 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20005} clearParameters. 
+4180 DEBUG [2023-06-04 18:12:13]  {conn-10005} pool-recycle
+4181 DEBUG [2023-06-04 18:12:13]  {conn-10005} pool-connect
+4181 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20006} created. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE user_id = ?
+4182 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20006} Parameters : [1]
+4182 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20006} Types : [INTEGER]
+4183 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20006} executed. 0.9277 millis. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE user_id = ?
+4183 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20006, rs-50006} open
+4183 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20006, rs-50006} Header: [file_store_id, user_id, current_size, max_size, permission]
+4183 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20006, rs-50006} Result: [1, 1, 1474, 1048576, 0]
+4183 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20006, rs-50006} closed
+4183 DEBUG [2023-06-04 18:12:13]  {conn-10005, pstmt-20006} clearParameters. 
+4184 DEBUG [2023-06-04 18:12:13]  {conn-10005} pool-recycle
+6330 DEBUG [2023-06-04 18:12:15]  {conn-10005} pool-connect
+6330 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20007} created. select
+     
+    
+    file_folder_id, file_folder_name, parent_folder_id, file_store_id,time
+   
+    from file_folder
+    where file_folder_id = ?
+6330 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20007} Parameters : [1]
+6331 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20007} Types : [INTEGER]
+6331 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20007} executed. 0.8734 millis. select
+     
+    
+    file_folder_id, file_folder_name, parent_folder_id, file_store_id,time
+   
+    from file_folder
+    where file_folder_id = ?
+6332 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20007, rs-50007} open
+6332 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20007, rs-50007} Header: [file_folder_id, file_folder_name, parent_folder_id, file_store_id, time]
+6332 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20007, rs-50007} Result: [1, 你不知道我为什么离开你, 0, 1, 2023-06-04 00:23:07.0]
+6332 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20007, rs-50007} closed
+6332 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20007} clearParameters. 
+6333 DEBUG [2023-06-04 18:12:15]  {conn-10005} pool-recycle
+6333 DEBUG [2023-06-04 18:12:15]  {conn-10005} pool-connect
+6334 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20008} created. select
+     
+    
+    file_folder_id, file_folder_name, parent_folder_id, file_store_id,time
+   
+    from file_folder
+    where parent_folder_id = ?
+6334 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20008} Parameters : [1]
+6334 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20008} Types : [INTEGER]
+6335 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20008} executed. 0.9244 millis. select
+     
+    
+    file_folder_id, file_folder_name, parent_folder_id, file_store_id,time
+   
+    from file_folder
+    where parent_folder_id = ?
+6335 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20008, rs-50008} open
+6335 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20008, rs-50008} Header: [file_folder_id, file_folder_name, parent_folder_id, file_store_id, time]
+6335 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20008, rs-50008} closed
+6335 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20008} clearParameters. 
+6335 DEBUG [2023-06-04 18:12:15]  {conn-10005} pool-recycle
+6336 DEBUG [2023-06-04 18:12:15]  {conn-10005} pool-connect
+6336 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20009} created. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where parent_folder_id = ?;
+6338 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20009} Parameters : [1]
+6338 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20009} Types : [INTEGER]
+6339 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20009} executed. 0.9946 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where parent_folder_id = ?;
+6339 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20009, rs-50009} open
+6339 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20009, rs-50009} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
+6339 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20009, rs-50009} Result: [4, 2022年2015433, 1, 1/2023-06-04/1, 1, 2023-06-04 00:23:35.0, 1, 10, 1, .xlsx]
+6340 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20009, rs-50009} Result: [6, 2022年2015433班级推优大会请假汇总, 1, 1/2023-06-04/1, 0, 2023-06-04 18:05:51.0, 1, 10, 1, .xlsx]
+6340 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20009, rs-50009} closed
+6340 DEBUG [2023-06-04 18:12:15]  {conn-10005, pstmt-20009} clearParameters. 
+6341 DEBUG [2023-06-04 18:12:15]  {conn-10005} pool-recycle
+14565407 DEBUG [2023-06-04 22:14:54]  {conn-10001} closed
+14565407 DEBUG [2023-06-04 22:14:54]  {conn-10002} closed
+14565408 DEBUG [2023-06-04 22:14:54]  {conn-10003} closed
+14565408 DEBUG [2023-06-04 22:14:54]  {conn-10004} closed
+14565408 DEBUG [2023-06-04 22:14:54]  {conn-10005, pstmt-20000} closed
+14565408 DEBUG [2023-06-04 22:14:54]  {conn-10005, pstmt-20001} closed
+14565408 DEBUG [2023-06-04 22:14:54]  {conn-10005, pstmt-20002} closed
+14565408 DEBUG [2023-06-04 22:14:54]  {conn-10005, pstmt-20003} closed
+14565408 DEBUG [2023-06-04 22:14:54]  {conn-10005, pstmt-20004} closed
+14565408 DEBUG [2023-06-04 22:14:54]  {conn-10005, pstmt-20005} closed
+14565408 DEBUG [2023-06-04 22:14:54]  {conn-10005, pstmt-20006} closed
+14565408 DEBUG [2023-06-04 22:14:54]  {conn-10005, pstmt-20007} closed
+14565409 DEBUG [2023-06-04 22:14:54]  {conn-10005, pstmt-20008} closed
+14565409 DEBUG [2023-06-04 22:14:54]  {conn-10005, pstmt-20009} closed
+14565410 DEBUG [2023-06-04 22:14:54]  {conn-10005} closed
+0    DEBUG [2023-06-04 22:17:09]  {conn-10001,procId-342} connected
+6    DEBUG [2023-06-04 22:17:09]  {conn-10001} pool-connect
+12   DEBUG [2023-06-04 22:17:09]  {conn-10002,procId-343} connected
+13   DEBUG [2023-06-04 22:17:09]  {conn-10002} pool-connect
+24   DEBUG [2023-06-04 22:17:09]  {conn-10003,procId-344} connected
+25   DEBUG [2023-06-04 22:17:09]  {conn-10003} pool-connect
+121  DEBUG [2023-06-04 22:17:09]  {conn-10002, pstmt-20001} created. select
+          user_id, open_id, file_store_id, user_name,email,password,register_time, image_path,role 
+        from user
+         WHERE email = ?
+121  DEBUG [2023-06-04 22:17:09]  {conn-10003, pstmt-20000} created. select
+          user_id, open_id, file_store_id, user_name,email,password,register_time, image_path,role 
+        from user
+         WHERE email = ?
+121  DEBUG [2023-06-04 22:17:09]  {conn-10001, pstmt-20002} created. select
+          user_id, open_id, file_store_id, user_name,email,password,register_time, image_path,role 
+        from user
+         WHERE email = ?
+134  DEBUG [2023-06-04 22:17:09]  {conn-10003, pstmt-20000} Parameters : [774860129@qq.com]
+134  DEBUG [2023-06-04 22:17:09]  {conn-10002, pstmt-20001} Parameters : [774860129@qq.com]
+134  DEBUG [2023-06-04 22:17:09]  {conn-10002, pstmt-20001} Types : [VARCHAR]
+134  DEBUG [2023-06-04 22:17:09]  {conn-10001, pstmt-20002} Parameters : [774860129@qq.com]
+135  DEBUG [2023-06-04 22:17:09]  {conn-10001, pstmt-20002} Types : [VARCHAR]
+134  DEBUG [2023-06-04 22:17:09]  {conn-10003, pstmt-20000} Types : [VARCHAR]
+140  ERROR [2023-06-04 22:17:09]  {conn-10003, pstmt-20000} execute error. select
+          user_id, open_id, file_store_id, user_name,email,password,register_time, image_path,role 
+        from user
+         WHERE email = ?
+java.sql.SQLSyntaxErrorException: Table 'clouddisk.user' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at jdk.proxy3/jdk.proxy3.$Proxy85.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy83.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at jdk.proxy2/jdk.proxy2.$Proxy66.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at jdk.proxy2/jdk.proxy2.$Proxy67.getUserByEmail(Unknown Source)
+	at com.cloud.service.impl.UserServiceImpl.getUserByEmail(UserServiceImpl.java:83)
+	at com.cloud.controller.LoginController.login(LoginController.java:95)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+142  ERROR [2023-06-04 22:17:09]  {conn-10001, pstmt-20002} execute error. select
+          user_id, open_id, file_store_id, user_name,email,password,register_time, image_path,role 
+        from user
+         WHERE email = ?
+java.sql.SQLSyntaxErrorException: Table 'clouddisk.user' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at jdk.proxy3/jdk.proxy3.$Proxy85.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy83.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at jdk.proxy2/jdk.proxy2.$Proxy66.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at jdk.proxy2/jdk.proxy2.$Proxy67.getUserByEmail(Unknown Source)
+	at com.cloud.service.impl.UserServiceImpl.getUserByEmail(UserServiceImpl.java:83)
+	at com.cloud.controller.LoginController.login(LoginController.java:95)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+141  ERROR [2023-06-04 22:17:09]  {conn-10002, pstmt-20001} execute error. select
+          user_id, open_id, file_store_id, user_name,email,password,register_time, image_path,role 
+        from user
+         WHERE email = ?
+java.sql.SQLSyntaxErrorException: Table 'clouddisk.user' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.wall.WallFilter.preparedStatement_execute(WallFilter.java:627)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at jdk.proxy3/jdk.proxy3.$Proxy85.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at jdk.proxy2/jdk.proxy2.$Proxy83.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at jdk.proxy2/jdk.proxy2.$Proxy66.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
+	at jdk.proxy2/jdk.proxy2.$Proxy67.getUserByEmail(Unknown Source)
+	at com.cloud.service.impl.UserServiceImpl.getUserByEmail(UserServiceImpl.java:83)
+	at com.cloud.controller.LoginController.login(LoginController.java:95)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+143  DEBUG [2023-06-04 22:17:09]  {conn-10001, pstmt-20002} clearParameters. 
+143  DEBUG [2023-06-04 22:17:09]  {conn-10003, pstmt-20000} clearParameters. 
+144  DEBUG [2023-06-04 22:17:09]  {conn-10002, pstmt-20001} clearParameters. 
+144  DEBUG [2023-06-04 22:17:09]  {conn-10001, pstmt-20002} closed
+144  DEBUG [2023-06-04 22:17:09]  {conn-10002, pstmt-20001} closed
+144  DEBUG [2023-06-04 22:17:09]  {conn-10003, pstmt-20000} closed
+145  DEBUG [2023-06-04 22:17:09]  {conn-10001} pool-recycle
+145  DEBUG [2023-06-04 22:17:09]  {conn-10002} pool-recycle
+145  DEBUG [2023-06-04 22:17:09]  {conn-10003} pool-recycle
+182  DEBUG [2023-06-04 22:17:09]  {conn-10002} pool-connect
+183  DEBUG [2023-06-04 22:17:09]  {conn-10002} pool-recycle
+65885 DEBUG [2023-06-04 22:18:15]  {conn-10002} pool-connect
+65885 DEBUG [2023-06-04 22:18:15]  {conn-10002, pstmt-20003} created. select
+          user_id, open_id, file_store_id, user_name,email,password,register_time, image_path,role 
+        from user
+         WHERE email = ?
+65886 DEBUG [2023-06-04 22:18:15]  {conn-10002, pstmt-20003} Parameters : [774860129@qq.com]
+65886 DEBUG [2023-06-04 22:18:15]  {conn-10002, pstmt-20003} Types : [VARCHAR]
+65896 DEBUG [2023-06-04 22:18:15]  {conn-10002, pstmt-20003} executed. 11.0648 millis. select
+          user_id, open_id, file_store_id, user_name,email,password,register_time, image_path,role 
+        from user
+         WHERE email = ?
+65900 DEBUG [2023-06-04 22:18:15]  {conn-10002, pstmt-20003, rs-50000} open
+65902 DEBUG [2023-06-04 22:18:15]  {conn-10002, pstmt-20003, rs-50000} Header: [user_id, open_id, file_store_id, user_name, email, password, register_time, image_path, role]
+65915 DEBUG [2023-06-04 22:18:15]  {conn-10002, pstmt-20003, rs-50000} closed
+65915 DEBUG [2023-06-04 22:18:15]  {conn-10002, pstmt-20003} clearParameters. 
+65916 DEBUG [2023-06-04 22:18:15]  {conn-10002} pool-recycle
+65917 DEBUG [2023-06-04 22:18:15]  {conn-10002} pool-connect
+65917 DEBUG [2023-06-04 22:18:15]  {conn-10002, pstmt-20003} Parameters : [774860129@qq.com]
+65917 DEBUG [2023-06-04 22:18:15]  {conn-10002, pstmt-20003} Types : [VARCHAR]
+65918 DEBUG [2023-06-04 22:18:15]  {conn-10002, pstmt-20003} executed. 0.8669 millis. select
+          user_id, open_id, file_store_id, user_name,email,password,register_time, image_path,role 
+        from user
+         WHERE email = ?
+65918 DEBUG [2023-06-04 22:18:15]  {conn-10002, pstmt-20003, rs-50001} open
+65918 DEBUG [2023-06-04 22:18:15]  {conn-10002, pstmt-20003, rs-50001} Header: [user_id, open_id, file_store_id, user_name, email, password, register_time, image_path, role]
+65918 DEBUG [2023-06-04 22:18:15]  {conn-10002, pstmt-20003, rs-50001} closed
+65918 DEBUG [2023-06-04 22:18:15]  {conn-10002, pstmt-20003} clearParameters. 
+65919 DEBUG [2023-06-04 22:18:15]  {conn-10002} pool-recycle
+85920 DEBUG [2023-06-04 22:18:35]  {conn-10002} pool-connect
+85920 DEBUG [2023-06-04 22:18:35]  {conn-10002, pstmt-20003} Parameters : [774860129@qq.com]
+85920 DEBUG [2023-06-04 22:18:35]  {conn-10002, pstmt-20003} Types : [VARCHAR]
+85921 DEBUG [2023-06-04 22:18:35]  {conn-10002, pstmt-20003} executed. 0.7284 millis. select
+          user_id, open_id, file_store_id, user_name,email,password,register_time, image_path,role 
+        from user
+         WHERE email = ?
+85921 DEBUG [2023-06-04 22:18:35]  {conn-10002, pstmt-20003, rs-50002} open
+85921 DEBUG [2023-06-04 22:18:35]  {conn-10002, pstmt-20003, rs-50002} Header: [user_id, open_id, file_store_id, user_name, email, password, register_time, image_path, role]
+85921 DEBUG [2023-06-04 22:18:35]  {conn-10002, pstmt-20003, rs-50002} closed
+85921 DEBUG [2023-06-04 22:18:35]  {conn-10002, pstmt-20003} clearParameters. 
+85921 DEBUG [2023-06-04 22:18:35]  {conn-10002} pool-recycle
+101534 DEBUG [2023-06-04 22:18:50]  {conn-10002} pool-connect
+101562 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20004} created. insert into user
+         ( user_name,
+        
+        
+                email,
+        
+        
+                password,
+        
+        
+                register_time,
+        
+        
+                image_path ) 
+         values ( ?,
+        
+        
+                ?,
+        
+        
+                ?,
+        
+        
+                ?,
+        
+        
+                ? )
+101564 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20004} Parameters : [TopGap, 774860129@qq.com, root, 2023-06-04 22:18:50.741, https://p.qpic.cn/qqconnect/0/app_101851241_1582451550/100?max-age=2592000&t=0]
+101564 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20004} Types : [VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR]
+101567 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20004} executed. 2.7511 millis. insert into user
+         ( user_name,
+        
+        
+                email,
+        
+        
+                password,
+        
+        
+                register_time,
+        
+        
+                image_path ) 
+         values ( ?,
+        
+        
+                ?,
+        
+        
+                ?,
+        
+        
+                ?,
+        
+        
+                ? )
+101567 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20004, rs-50003} open
+101567 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20004, rs-50003} Header: [GENERATED_KEY]
+101569 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20004, rs-50003} Result: [1]
+101569 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20004, rs-50003} closed
+101570 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20004} clearParameters. 
+101570 DEBUG [2023-06-04 22:18:50]  {conn-10002} pool-recycle
+101571 DEBUG [2023-06-04 22:18:50]  {conn-10002} pool-connect
+101572 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20005} created. insert into file_store(user_id) values (?)
+101573 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20005} Parameters : [1]
+101573 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20005} Types : [INTEGER]
+101576 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20005} executed. 2.9623 millis. insert into file_store(user_id) values (?)
+101577 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20005, rs-50004} open
+101577 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20005, rs-50004} Header: [GENERATED_KEY]
+101577 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20005, rs-50004} Result: [1]
+101577 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20005, rs-50004} closed
+101577 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20005} clearParameters. 
+101580 DEBUG [2023-06-04 22:18:50]  {conn-10002} pool-recycle
+101581 DEBUG [2023-06-04 22:18:50]  {conn-10002} pool-connect
+101583 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20006} created. update user
+         SET file_store_id = ?,
+        
+        
+                user_name = ?,
+        
+        
+                email = ?,
+        
+        
+                password = ?,
+        
+        
+                register_time = ?,
+        
+        
+                image_path = ? 
+         WHERE user_id = ?
+101584 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20006} Parameters : [1, TopGap, 774860129@qq.com, root, 2023-06-04 22:18:50.741, https://p.qpic.cn/qqconnect/0/app_101851241_1582451550/100?max-age=2592000&t=0, 1]
+101584 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20006} Types : [INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, INTEGER]
+101586 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20006} executed. 2.5677 millis. update user
+         SET file_store_id = ?,
+        
+        
+                user_name = ?,
+        
+        
+                email = ?,
+        
+        
+                password = ?,
+        
+        
+                register_time = ?,
+        
+        
+                image_path = ? 
+         WHERE user_id = ?
+101587 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20006} clearParameters. 
+101587 DEBUG [2023-06-04 22:18:50]  {conn-10002} pool-recycle
+101619 DEBUG [2023-06-04 22:18:50]  {conn-10002} pool-connect
+101621 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20007} created. select sum(type = 1) doc,sum(type = 2) image,sum(type = 3) video,
+      sum(type = 4) music,sum(type = 5) other,count(*) fileCount from my_file
+      where file_store_id = ?
+101621 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20007} Parameters : [1]
+101621 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20007} Types : [INTEGER]
+101622 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20007} executed. 1.0255 millis. select sum(type = 1) doc,sum(type = 2) image,sum(type = 3) video,
+      sum(type = 4) music,sum(type = 5) other,count(*) fileCount from my_file
+      where file_store_id = ?
+101622 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20007, rs-50005} open
+101623 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20007, rs-50005} Header: [doc, image, video, music, other, fileCount]
+101623 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20007, rs-50005} Result: [null, null, null, null, null, 0]
+101625 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20007, rs-50005} closed
+101625 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20007} clearParameters. 
+101627 DEBUG [2023-06-04 22:18:50]  {conn-10002} pool-recycle
+101627 DEBUG [2023-06-04 22:18:50]  {conn-10002} pool-connect
+101628 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20008} created. select count(*) from file_folder where file_store_id = ?
+101629 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20008} Parameters : [1]
+101629 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20008} Types : [INTEGER]
+101630 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20008} executed. 1.2372 millis. select count(*) from file_folder where file_store_id = ?
+101630 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20008, rs-50006} open
+101630 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20008, rs-50006} Header: [count(*)]
+101631 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20008, rs-50006} Result: [0]
+101631 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20008, rs-50006} closed
+101631 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20008} clearParameters. 
+101632 DEBUG [2023-06-04 22:18:50]  {conn-10002} pool-recycle
+101632 DEBUG [2023-06-04 22:18:50]  {conn-10002} pool-connect
+101633 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20009} created. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE file_store_id = ?
+101633 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20009} Parameters : [1]
+101633 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20009} Types : [INTEGER]
+101634 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20009} executed. 1.0261 millis. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE file_store_id = ?
+101634 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20009, rs-50007} open
+101634 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20009, rs-50007} Header: [file_store_id, user_id, current_size, max_size, permission]
+101635 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20009, rs-50007} Result: [1, 1, 0, 1048576, 0]
+101636 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20009, rs-50007} closed
+101636 DEBUG [2023-06-04 22:18:50]  {conn-10002, pstmt-20009} clearParameters. 
+101637 DEBUG [2023-06-04 22:18:50]  {conn-10002} pool-recycle
+104537 DEBUG [2023-06-04 22:18:53]  {conn-10002} pool-connect
+104537 DEBUG [2023-06-04 22:18:53]  {conn-10002, pstmt-20010} created. select
+     
+    
+    file_folder_id, file_folder_name, parent_folder_id, file_store_id,time
+   
+    from file_folder
+    where file_store_id = ? and parent_folder_id = 0;
+104538 DEBUG [2023-06-04 22:18:53]  {conn-10002, pstmt-20010} Parameters : [1]
+104538 DEBUG [2023-06-04 22:18:53]  {conn-10002, pstmt-20010} Types : [INTEGER]
+104539 DEBUG [2023-06-04 22:18:53]  {conn-10002, pstmt-20010} executed. 0.7689 millis. select
+     
+    
+    file_folder_id, file_folder_name, parent_folder_id, file_store_id,time
+   
+    from file_folder
+    where file_store_id = ? and parent_folder_id = 0;
+104539 DEBUG [2023-06-04 22:18:53]  {conn-10002, pstmt-20010, rs-50008} open
+104539 DEBUG [2023-06-04 22:18:53]  {conn-10002, pstmt-20010, rs-50008} Header: [file_folder_id, file_folder_name, parent_folder_id, file_store_id, time]
+104539 DEBUG [2023-06-04 22:18:53]  {conn-10002, pstmt-20010, rs-50008} closed
+104539 DEBUG [2023-06-04 22:18:53]  {conn-10002, pstmt-20010} clearParameters. 
+104539 DEBUG [2023-06-04 22:18:53]  {conn-10002} pool-recycle
+117313 DEBUG [2023-06-04 22:19:06]  {conn-10002} pool-connect
+117314 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20011} created. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE user_id = ?
+117314 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20011} Parameters : [1]
+117314 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20011} Types : [INTEGER]
+117315 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20011} executed. 0.9593 millis. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE user_id = ?
+117315 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20011, rs-50009} open
+117315 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20011, rs-50009} Header: [file_store_id, user_id, current_size, max_size, permission]
+117315 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20011, rs-50009} Result: [1, 1, 0, 1048576, 0]
+117316 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20011, rs-50009} closed
+117316 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20011} clearParameters. 
+117316 DEBUG [2023-06-04 22:19:06]  {conn-10002} pool-recycle
+117317 DEBUG [2023-06-04 22:19:06]  {conn-10002} pool-connect
+117318 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20012} created. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where file_store_id = ? and parent_folder_id = 0;
+117318 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20012} Parameters : [1]
+117318 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20012} Types : [INTEGER]
+117318 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20012} executed. 0.5951 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where file_store_id = ? and parent_folder_id = 0;
+117318 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20012, rs-50010} open
+117319 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20012, rs-50010} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
+117319 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20012, rs-50010} closed
+117319 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20012} clearParameters. 
+117319 DEBUG [2023-06-04 22:19:06]  {conn-10002} pool-recycle
+117368 DEBUG [2023-06-04 22:19:06]  {conn-10002} pool-connect
+117369 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20013} created. insert into my_file
+     ( my_file_name,
+    
+    
+      file_store_id,
+    
+    
+      my_file_path,
+    
+    
+      download_time,
+    
+    
+      upload_time,
+    
+    
+      parent_folder_id,
+    
+    
+      size,
+    
+    
+      type,
+    
+    
+      postfix ) 
+     values ( ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ? )
+117370 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20013} Parameters : [1_星期二下午20计科3班, 1, 1/2023-06-04/0, 0, 2023-06-04 22:19:06.593, 0, 1056, 1, .xlsx]
+117370 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20013} Types : [VARCHAR, INTEGER, VARCHAR, INTEGER, TIMESTAMP, INTEGER, INTEGER, INTEGER, VARCHAR]
+117372 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20013} executed. 1.8429 millis. insert into my_file
+     ( my_file_name,
+    
+    
+      file_store_id,
+    
+    
+      my_file_path,
+    
+    
+      download_time,
+    
+    
+      upload_time,
+    
+    
+      parent_folder_id,
+    
+    
+      size,
+    
+    
+      type,
+    
+    
+      postfix ) 
+     values ( ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ? )
+117373 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20013, rs-50011} open
+117373 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20013, rs-50011} Header: [GENERATED_KEY]
+117373 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20013, rs-50011} Result: [1]
+117373 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20013, rs-50011} closed
+117373 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20013} clearParameters. 
+117374 DEBUG [2023-06-04 22:19:06]  {conn-10002} pool-recycle
+117375 DEBUG [2023-06-04 22:19:06]  {conn-10002} pool-connect
+117375 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20014} created. update file_store set current_size = current_size + ? where file_store_id = ?
+117376 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20014} Parameters : [1056, 1]
+117376 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20014} Types : [INTEGER, INTEGER]
+117377 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20014} executed. 1.7427 millis. update file_store set current_size = current_size + ? where file_store_id = ?
+117377 DEBUG [2023-06-04 22:19:06]  {conn-10002, pstmt-20014} clearParameters. 
+117378 DEBUG [2023-06-04 22:19:06]  {conn-10002} pool-recycle
+121745 DEBUG [2023-06-04 22:19:10]  {conn-10002} pool-connect
+121745 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20007} Parameters : [1]
+121745 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20007} Types : [INTEGER]
+121746 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20007} executed. 0.9485 millis. select sum(type = 1) doc,sum(type = 2) image,sum(type = 3) video,
+      sum(type = 4) music,sum(type = 5) other,count(*) fileCount from my_file
+      where file_store_id = ?
+121746 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20007, rs-50012} open
+121746 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20007, rs-50012} Header: [doc, image, video, music, other, fileCount]
+121747 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20007, rs-50012} Result: [1, 0, 0, 0, 0, 1]
+121748 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20007, rs-50012} closed
+121748 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20007} clearParameters. 
+121749 DEBUG [2023-06-04 22:19:10]  {conn-10002} pool-recycle
+121750 DEBUG [2023-06-04 22:19:10]  {conn-10002} pool-connect
+121750 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20009} Parameters : [1]
+121750 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20009} Types : [INTEGER]
+121751 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20009} executed. 1.2094 millis. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE file_store_id = ?
+121751 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20009, rs-50013} open
+121752 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20009, rs-50013} Header: [file_store_id, user_id, current_size, max_size, permission]
+121752 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20009, rs-50013} Result: [1, 1, 1056, 1048576, 0]
+121752 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20009, rs-50013} closed
+121752 DEBUG [2023-06-04 22:19:10]  {conn-10002, pstmt-20009} clearParameters. 
+121753 DEBUG [2023-06-04 22:19:10]  {conn-10002} pool-recycle
+123831 DEBUG [2023-06-04 22:19:13]  {conn-10002} pool-connect
+123832 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20012} Parameters : [1]
+123832 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20012} Types : [INTEGER]
+123832 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20012} executed. 0.7118 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where file_store_id = ? and parent_folder_id = 0;
+123833 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20012, rs-50014} open
+123833 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20012, rs-50014} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
+123833 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20012, rs-50014} Result: [1, 1_星期二下午20计科3班, 1, 1/2023-06-04/0, 0, 2023-06-04 22:19:07.0, 0, 1056, 1, .xlsx]
+123836 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20012, rs-50014} closed
+123836 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20012} clearParameters. 
+123836 DEBUG [2023-06-04 22:19:13]  {conn-10002} pool-recycle
+123837 DEBUG [2023-06-04 22:19:13]  {conn-10002} pool-connect
+123837 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20011} Parameters : [1]
+123837 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20011} Types : [INTEGER]
+123838 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20011} executed. 0.8715 millis. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE user_id = ?
+123838 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20011, rs-50015} open
+123838 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20011, rs-50015} Header: [file_store_id, user_id, current_size, max_size, permission]
+123838 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20011, rs-50015} Result: [1, 1, 1056, 1048576, 0]
+123838 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20011, rs-50015} closed
+123838 DEBUG [2023-06-04 22:19:13]  {conn-10002, pstmt-20011} clearParameters. 
+123839 DEBUG [2023-06-04 22:19:13]  {conn-10002} pool-recycle
+134735 DEBUG [2023-06-04 22:19:23]  {conn-10002} pool-connect
+134738 DEBUG [2023-06-04 22:19:23]  {conn-10002, pstmt-20015} created. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where my_file_id = ?
+134741 DEBUG [2023-06-04 22:19:23]  {conn-10002, pstmt-20015} Parameters : [1]
+134741 DEBUG [2023-06-04 22:19:23]  {conn-10002, pstmt-20015} Types : [INTEGER]
+134746 DEBUG [2023-06-04 22:19:23]  {conn-10002, pstmt-20015} executed. 4.7228 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where my_file_id = ?
+134746 DEBUG [2023-06-04 22:19:23]  {conn-10002, pstmt-20015, rs-50016} open
+134747 DEBUG [2023-06-04 22:19:23]  {conn-10002, pstmt-20015, rs-50016} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
+134748 DEBUG [2023-06-04 22:19:23]  {conn-10002, pstmt-20015, rs-50016} Result: [1, 1_星期二下午20计科3班, 1, 1/2023-06-04/0, 0, 2023-06-04 22:19:07.0, 0, 1056, 1, .xlsx]
+134753 DEBUG [2023-06-04 22:19:23]  {conn-10002, pstmt-20015, rs-50016} closed
+134753 DEBUG [2023-06-04 22:19:23]  {conn-10002, pstmt-20015} clearParameters. 
+134754 DEBUG [2023-06-04 22:19:23]  {conn-10002} pool-recycle
+138585 DEBUG [2023-06-04 22:19:27]  {conn-10002} pool-connect
+138587 DEBUG [2023-06-04 22:19:27]  {conn-10002, pstmt-20016} created. update my_file
+     SET download_time = ? 
+    where my_file_id = ?
+138589 DEBUG [2023-06-04 22:19:27]  {conn-10002, pstmt-20016} Parameters : [1, 1]
+138589 DEBUG [2023-06-04 22:19:27]  {conn-10002, pstmt-20016} Types : [INTEGER, INTEGER]
+138592 DEBUG [2023-06-04 22:19:27]  {conn-10002, pstmt-20016} executed. 3.953 millis. update my_file
+     SET download_time = ? 
+    where my_file_id = ?
+138594 DEBUG [2023-06-04 22:19:27]  {conn-10002, pstmt-20016} clearParameters. 
+138596 DEBUG [2023-06-04 22:19:27]  {conn-10002} pool-recycle
+241770 DEBUG [2023-06-04 22:21:10]  {conn-10002} pool-connect
+241770 DEBUG [2023-06-04 22:21:10]  {conn-10002, pstmt-20015} Parameters : [1]
+241770 DEBUG [2023-06-04 22:21:10]  {conn-10002, pstmt-20015} Types : [INTEGER]
+241771 DEBUG [2023-06-04 22:21:10]  {conn-10002, pstmt-20015} executed. 0.6879 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where my_file_id = ?
+241771 DEBUG [2023-06-04 22:21:10]  {conn-10002, pstmt-20015, rs-50017} open
+241771 DEBUG [2023-06-04 22:21:10]  {conn-10002, pstmt-20015, rs-50017} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
+241771 DEBUG [2023-06-04 22:21:10]  {conn-10002, pstmt-20015, rs-50017} Result: [1, 1_星期二下午20计科3班, 1, 1/2023-06-04/0, 1, 2023-06-04 22:19:07.0, 0, 1056, 1, .xlsx]
+241772 DEBUG [2023-06-04 22:21:10]  {conn-10002, pstmt-20015, rs-50017} closed
+241772 DEBUG [2023-06-04 22:21:10]  {conn-10002, pstmt-20015} clearParameters. 
+241772 DEBUG [2023-06-04 22:21:10]  {conn-10002} pool-recycle
+241777 DEBUG [2023-06-04 22:21:11]  {conn-10002} pool-connect
+241778 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20017} created. update file_store set current_size = current_size - ? where file_store_id = ?
+241778 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20017} Parameters : [1056, 1]
+241778 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20017} Types : [INTEGER, INTEGER]
+241780 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20017} executed. 2.0473 millis. update file_store set current_size = current_size - ? where file_store_id = ?
+241780 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20017} clearParameters. 
+241780 DEBUG [2023-06-04 22:21:11]  {conn-10002} pool-recycle
+241781 DEBUG [2023-06-04 22:21:11]  {conn-10002} pool-connect
+241781 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20018} created. delete from my_file
+    where my_file_id = ?
+241781 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20018} Parameters : [1]
+241781 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20018} Types : [INTEGER]
+241783 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20018} executed. 1.5955 millis. delete from my_file
+    where my_file_id = ?
+241783 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20018} clearParameters. 
+241784 DEBUG [2023-06-04 22:21:11]  {conn-10002} pool-recycle
+241813 DEBUG [2023-06-04 22:21:11]  {conn-10002} pool-connect
+241813 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20012} Parameters : [1]
+241813 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20012} Types : [INTEGER]
+241814 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20012} executed. 0.7934 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where file_store_id = ? and parent_folder_id = 0;
+241814 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20012, rs-50018} open
+241814 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20012, rs-50018} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
+241814 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20012, rs-50018} closed
+241814 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20012} clearParameters. 
+241814 DEBUG [2023-06-04 22:21:11]  {conn-10002} pool-recycle
+241816 DEBUG [2023-06-04 22:21:11]  {conn-10002} pool-connect
+241816 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20007} Parameters : [1]
+241816 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20007} Types : [INTEGER]
+241817 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20007} executed. 0.8391 millis. select sum(type = 1) doc,sum(type = 2) image,sum(type = 3) video,
+      sum(type = 4) music,sum(type = 5) other,count(*) fileCount from my_file
+      where file_store_id = ?
+241817 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20007, rs-50019} open
+241817 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20007, rs-50019} Header: [doc, image, video, music, other, fileCount]
+241817 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20007, rs-50019} Result: [null, null, null, null, null, 0]
+241817 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20007, rs-50019} closed
+241817 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20007} clearParameters. 
+241818 DEBUG [2023-06-04 22:21:11]  {conn-10002} pool-recycle
+241818 DEBUG [2023-06-04 22:21:11]  {conn-10002} pool-connect
+241818 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20011} Parameters : [1]
+241819 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20011} Types : [INTEGER]
+241820 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20011} executed. 1.2251 millis. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE user_id = ?
+241820 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20011, rs-50020} open
+241820 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20011, rs-50020} Header: [file_store_id, user_id, current_size, max_size, permission]
+241820 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20011, rs-50020} Result: [1, 1, 0, 1048576, 0]
+241820 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20011, rs-50020} closed
+241820 DEBUG [2023-06-04 22:21:11]  {conn-10002, pstmt-20011} clearParameters. 
+241821 DEBUG [2023-06-04 22:21:11]  {conn-10002} pool-recycle
+559556 DEBUG [2023-06-04 22:26:28]  {conn-10002} pool-connect
+559556 DEBUG [2023-06-04 22:26:28]  {conn-10002, pstmt-20013} Parameters : [2022-09-3020-54-34, 1, 1/2023-06-04/0, 0, 2023-06-04 22:26:28.781, 0, 245274, 3, .mkv]
+559556 DEBUG [2023-06-04 22:26:28]  {conn-10002, pstmt-20013} Types : [VARCHAR, INTEGER, VARCHAR, INTEGER, TIMESTAMP, INTEGER, INTEGER, INTEGER, VARCHAR]
+559559 DEBUG [2023-06-04 22:26:28]  {conn-10002, pstmt-20013} executed. 3.0059 millis. insert into my_file
+     ( my_file_name,
+    
+    
+      file_store_id,
+    
+    
+      my_file_path,
+    
+    
+      download_time,
+    
+    
+      upload_time,
+    
+    
+      parent_folder_id,
+    
+    
+      size,
+    
+    
+      type,
+    
+    
+      postfix ) 
+     values ( ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ?,
+    
+    
+      ? )
+559559 DEBUG [2023-06-04 22:26:28]  {conn-10002, pstmt-20013, rs-50021} open
+559559 DEBUG [2023-06-04 22:26:28]  {conn-10002, pstmt-20013, rs-50021} Header: [GENERATED_KEY]
+559559 DEBUG [2023-06-04 22:26:28]  {conn-10002, pstmt-20013, rs-50021} Result: [2]
+559560 DEBUG [2023-06-04 22:26:28]  {conn-10002, pstmt-20013, rs-50021} closed
+559560 DEBUG [2023-06-04 22:26:28]  {conn-10002, pstmt-20013} clearParameters. 
+559560 DEBUG [2023-06-04 22:26:28]  {conn-10002} pool-recycle
+559560 DEBUG [2023-06-04 22:26:28]  {conn-10002} pool-connect
+559560 DEBUG [2023-06-04 22:26:28]  {conn-10002, pstmt-20014} Parameters : [245274, 1]
+559560 DEBUG [2023-06-04 22:26:28]  {conn-10002, pstmt-20014} Types : [INTEGER, INTEGER]
+559562 DEBUG [2023-06-04 22:26:28]  {conn-10002, pstmt-20014} executed. 2.1807 millis. update file_store set current_size = current_size + ? where file_store_id = ?
+559563 DEBUG [2023-06-04 22:26:28]  {conn-10002, pstmt-20014} clearParameters. 
+559563 DEBUG [2023-06-04 22:26:28]  {conn-10002} pool-recycle
+602730 DEBUG [2023-06-04 22:27:11]  {conn-10002} pool-connect
+602731 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20012} Parameters : [1]
+602731 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20012} Types : [INTEGER]
+602732 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20012} executed. 1.1764 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where file_store_id = ? and parent_folder_id = 0;
+602732 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20012, rs-50022} open
+602732 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20012, rs-50022} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
+602732 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20012, rs-50022} Result: [2, 2022-09-3020-54-34, 1, 1/2023-06-04/0, 0, 2023-06-04 22:26:29.0, 0, 245274, 3, .mkv]
+602734 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20012, rs-50022} closed
+602735 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20012} clearParameters. 
+602735 DEBUG [2023-06-04 22:27:11]  {conn-10002} pool-recycle
+602736 DEBUG [2023-06-04 22:27:11]  {conn-10002} pool-connect
+602736 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20007} Parameters : [1]
+602736 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20007} Types : [INTEGER]
+602737 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20007} executed. 1.1658 millis. select sum(type = 1) doc,sum(type = 2) image,sum(type = 3) video,
+      sum(type = 4) music,sum(type = 5) other,count(*) fileCount from my_file
+      where file_store_id = ?
+602737 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20007, rs-50023} open
+602737 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20007, rs-50023} Header: [doc, image, video, music, other, fileCount]
+602737 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20007, rs-50023} Result: [0, 0, 1, 0, 0, 1]
+602738 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20007, rs-50023} closed
+602738 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20007} clearParameters. 
+602738 DEBUG [2023-06-04 22:27:11]  {conn-10002} pool-recycle
+602739 DEBUG [2023-06-04 22:27:11]  {conn-10002} pool-connect
+602739 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20011} Parameters : [1]
+602739 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20011} Types : [INTEGER]
+602740 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20011} executed. 0.9748 millis. select  
+        file_store_id,user_id,current_size,max_size,permission
+      from file_store
+         WHERE user_id = ?
+602740 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20011, rs-50024} open
+602740 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20011, rs-50024} Header: [file_store_id, user_id, current_size, max_size, permission]
+602740 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20011, rs-50024} Result: [1, 1, 245274, 1048576, 0]
+602742 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20011, rs-50024} closed
+602742 DEBUG [2023-06-04 22:27:11]  {conn-10002, pstmt-20011} clearParameters. 
+602743 DEBUG [2023-06-04 22:27:11]  {conn-10002} pool-recycle
+845571 DEBUG [2023-06-04 22:31:14]  {conn-10002} pool-connect
+845572 DEBUG [2023-06-04 22:31:14]  {conn-10002, pstmt-20015} Parameters : [2]
+845572 DEBUG [2023-06-04 22:31:14]  {conn-10002, pstmt-20015} Types : [INTEGER]
+845573 DEBUG [2023-06-04 22:31:14]  {conn-10001} pool-connect
+845574 DEBUG [2023-06-04 22:31:14]  {conn-10001, pstmt-20019} created. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where my_file_id = ?
+845574 DEBUG [2023-06-04 22:31:14]  {conn-10002, pstmt-20015} executed. 2.1964 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where my_file_id = ?
+845574 DEBUG [2023-06-04 22:31:14]  {conn-10002, pstmt-20015, rs-50025} open
+845575 DEBUG [2023-06-04 22:31:14]  {conn-10002, pstmt-20015, rs-50025} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
+845575 DEBUG [2023-06-04 22:31:14]  {conn-10001, pstmt-20019} Parameters : [2]
+845575 DEBUG [2023-06-04 22:31:14]  {conn-10001, pstmt-20019} Types : [INTEGER]
+845575 DEBUG [2023-06-04 22:31:14]  {conn-10003} pool-connect
+845575 DEBUG [2023-06-04 22:31:14]  {conn-10002, pstmt-20015, rs-50025} Result: [2, 2022-09-3020-54-34, 1, 1/2023-06-04/0, 0, 2023-06-04 22:26:29.0, 0, 245274, 3, .mkv]
+845575 DEBUG [2023-06-04 22:31:14]  {conn-10003, pstmt-20020} created. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where my_file_id = ?
+845576 DEBUG [2023-06-04 22:31:14]  {conn-10003, pstmt-20020} Parameters : [2]
+845576 DEBUG [2023-06-04 22:31:14]  {conn-10003, pstmt-20020} Types : [INTEGER]
+845576 DEBUG [2023-06-04 22:31:14]  {conn-10002, pstmt-20015, rs-50025} closed
+845576 DEBUG [2023-06-04 22:31:14]  {conn-10002, pstmt-20015} clearParameters. 
+845577 DEBUG [2023-06-04 22:31:14]  {conn-10002} pool-recycle
+845577 DEBUG [2023-06-04 22:31:14]  {conn-10001, pstmt-20019} executed. 2.542 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where my_file_id = ?
+845577 DEBUG [2023-06-04 22:31:14]  {conn-10003, pstmt-20020} executed. 1.5256 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where my_file_id = ?
+845577 DEBUG [2023-06-04 22:31:14]  {conn-10001, pstmt-20019, rs-50026} open
+845577 DEBUG [2023-06-04 22:31:14]  {conn-10001, pstmt-20019, rs-50026} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
+845577 DEBUG [2023-06-04 22:31:14]  {conn-10002} pool-connect
+845578 DEBUG [2023-06-04 22:31:14]  {conn-10001, pstmt-20019, rs-50026} Result: [2, 2022-09-3020-54-34, 1, 1/2023-06-04/0, 0, 2023-06-04 22:26:29.0, 0, 245274, 3, .mkv]
+845577 DEBUG [2023-06-04 22:31:14]  {conn-10003, pstmt-20020, rs-50027} open
+845578 DEBUG [2023-06-04 22:31:14]  {conn-10003, pstmt-20020, rs-50027} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
+845579 DEBUG [2023-06-04 22:31:14]  {conn-10003, pstmt-20020, rs-50027} Result: [2, 2022-09-3020-54-34, 1, 1/2023-06-04/0, 0, 2023-06-04 22:26:29.0, 0, 245274, 3, .mkv]
+845579 DEBUG [2023-06-04 22:31:14]  {conn-10001, pstmt-20019, rs-50026} closed
+845580 DEBUG [2023-06-04 22:31:14]  {conn-10001, pstmt-20019} clearParameters. 
+845579 DEBUG [2023-06-04 22:31:14]  {conn-10002, pstmt-20015} Parameters : [2]
+845581 DEBUG [2023-06-04 22:31:14]  {conn-10002, pstmt-20015} Types : [INTEGER]
+845582 DEBUG [2023-06-04 22:31:14]  {conn-10003, pstmt-20020, rs-50027} closed
+845583 DEBUG [2023-06-04 22:31:14]  {conn-10002, pstmt-20015} executed. 3.3443 millis. select
+     
+    my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time,
+    parent_folder_id,size,type,postfix
+   
+    from my_file
+    where my_file_id = ?
+845583 DEBUG [2023-06-04 22:31:14]  {conn-10002, pstmt-20015, rs-50028} open
+845584 DEBUG [2023-06-04 22:31:14]  {conn-10002, pstmt-20015, rs-50028} Header: [my_file_id, my_file_name, file_store_id, my_file_path, download_time, upload_time, parent_folder_id, size, type, postfix]
